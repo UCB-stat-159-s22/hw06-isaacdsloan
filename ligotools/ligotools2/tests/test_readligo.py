@@ -1,5 +1,11 @@
-from ligotools import readligo as rl
+import ligotools2.readligo as rl
+
 import numpy as np
+from scipy.interpolate import interp1d
+from scipy.io import wavfile
+
+
+
 # from pathlib import Path
 
 def test_loaddata1():
@@ -34,3 +40,6 @@ def test_dq_channel_to_seglist2():
     new_slice = segment_list[0]
     
     assert len(random_list[new_slice]) == 131072
+    
+
+
