@@ -1,4 +1,7 @@
-name: ligo
+name: ligo2
+channels:
+  - conda-forge
+  - defaults
 dependencies:
   - python=2.7
   - decorator=4.4
