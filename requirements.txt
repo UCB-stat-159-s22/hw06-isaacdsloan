@@ -1,5 +1,5 @@
 jupyter-book
 matplotlib
 numpy
-pytest = 4.6
+pytest == 4.6
 pathlib
