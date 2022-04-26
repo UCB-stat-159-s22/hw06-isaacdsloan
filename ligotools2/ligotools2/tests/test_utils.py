@@ -140,5 +140,5 @@ def test_plot_filtering():
     
     
     
-    # PATH = Path("/home/jovyan/hw/hw06-isaacdsloan/figures/TEST_H1_matchfreq.png")
-    # assert PATH.exists()
+    PATH = Path("/home/jovyan/hw/hw06-isaacdsloan/figures/TEST_H1_SNR.png")
+    assert PATH.exists()

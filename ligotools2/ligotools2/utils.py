@@ -59,7 +59,10 @@ def plot_matched_filtering(template_p, template_c, template_offset, time, strain
     #   that minimizes "spectral leakage" https://en.wikipedia.org/wiki/Spectral_leakage
     # import matplotlib
     # matplotlib.use('Agg')
+    
     cwd = "/home/jovyan/hw/hw06-isaacdsloan/"
+    is_path = Path(cwd).exists()
+    print(is_path)
     
     NFFT = 4*fs
     psd_window = np.blackman(NFFT)
@@ -176,7 +179,10 @@ def plot_matched_filtering(template_p, template_c, template_offset, time, strain
             plt.grid('on')
             plt.xlabel('Time since {0:.4f}'.format(timemax))
             plt.legend(loc='upper left')
-            plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_SNR."+plottype)
+            if is_path:
+                plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_SNR."+plottype)
+            else:
+                plt.savefig('~/figures/' +eventname+"_"+det+"_SNR."+plottype)
 
             plt.figure(figsize=(10,8))
             plt.subplot(2,1,1)
@@ -199,7 +205,10 @@ def plot_matched_filtering(template_p, template_c, template_offset, time, strain
             plt.ylabel('whitened strain (units of noise stdev)')
             plt.legend(loc='upper left')
             plt.title(det+' Residual whitened data after subtracting template around event')
-            plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_matchtime."+plottype)
+            if is_path:
+                plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_SNR."+plottype)
+            else:
+                plt.savefig('~/figures/' +eventname+"_"+det+"_SNR."+plottype)
 
             # -- Display PSD and template
             # must multiply by sqrt(f) to plot template fft on top of ASD:
@@ -214,4 +223,7 @@ def plot_matched_filtering(template_p, template_c, template_offset, time, strain
             plt.ylabel('strain noise ASD (strain/rtHz), template h(f)*rt(f)')
             plt.legend(loc='upper left')
             plt.title(det+' ASD and template around event')
-            plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_matchfreq."+plottype)
+            if is_path:
+                plt.savefig(cwd + 'figures/' +eventname+"_"+det+"_SNR."+plottype)
+            else:
+                plt.savefig('~/figures/' +eventname+"_"+det+"_SNR."+plottype)

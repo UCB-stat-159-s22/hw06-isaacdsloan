@@ -8,3 +8,9 @@
 **Testing:**
 Make sure to run pytest ligotools2, had an issue with original ligotools since I was unable to import utils
 
+**Binder**
+* Once on binder run make env to create the environment ligo2
+* pip install pathlib, dependencies in requirements.txt
+* go into ligotools2 and run pip install .
+* now select ligo2 kernel when running the notebook
+
