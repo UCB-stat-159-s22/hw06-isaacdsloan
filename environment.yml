@@ -10,4 +10,6 @@ dependencies:
   - scipy=1.2
   - matplotlib=2.2
   - h5py=2.10
+pip:
+  - -r requirements.txt
   

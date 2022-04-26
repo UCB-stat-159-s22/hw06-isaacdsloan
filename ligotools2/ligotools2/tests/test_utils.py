@@ -15,6 +15,7 @@ import matplotlib.mlab as mlab
 
 
 
+
 def test_whiten():
     fn_H1 = "/home/jovyan/hw/hw06-isaacdsloan/data/H-H1_LOSC_4_V2-1126259446-32.hdf5"
     strain_H1, time_H1, chan_dict_H1 = rl.loaddata(fn_H1, 'H1')

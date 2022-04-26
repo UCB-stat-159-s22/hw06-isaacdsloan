@@ -1,4 +1,5 @@
 import matplotlib
+matplotlib.use('Agg')
 
 import numpy as np
 from scipy import signal
@@ -56,6 +57,8 @@ def reqshift(data,fshift=100,sample_rate=4096):
 def plot_matched_filtering(template_p, template_c, template_offset, time, strain_L1, strain_H1, strain_L1_whitenbp, strain_H1_whitenbp, dt, ab, bb, normalization, make_plots, tevent = 1126259462.44, plottype = "png",fs = 4096, eventname = 'GW150914'):
     # -- To calculate the PSD of the data, choose an overlap and a window (common to all detectors)
     #   that minimizes "spectral leakage" https://en.wikipedia.org/wiki/Spectral_leakage
+    # import matplotlib
+    # matplotlib.use('Agg')
     cwd = "/home/jovyan/hw/hw06-isaacdsloan/"
     
     NFFT = 4*fs
