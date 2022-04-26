@@ -637,6 +637,78 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ligotools2/utils.py:2: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to &#39;module://ipykernel.pylab.backend_inline&#39; by the following code:
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/runpy.py&quot;, line 174, in _run_module_as_main
+    &quot;__main__&quot;, fname, loader, pkg_name)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/runpy.py&quot;, line 72, in _run_code
+    exec code in run_globals
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel_launcher.py&quot;, line 16, in &lt;module&gt;
+    app.launch_new_instance()
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/traitlets/config/application.py&quot;, line 664, in launch_instance
+    app.start()
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/kernelapp.py&quot;, line 486, in start
+    self.io_loop.start()
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/tornado/ioloop.py&quot;, line 1073, in start
+    handler_func(fd_obj, events)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/tornado/stack_context.py&quot;, line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py&quot;, line 456, in _handle_events
+    self._handle_recv()
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py&quot;, line 486, in _handle_recv
+    self._run_callback(callback, msg)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py&quot;, line 438, in _run_callback
+    callback(*args, **kwargs)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/tornado/stack_context.py&quot;, line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/kernelbase.py&quot;, line 283, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/kernelbase.py&quot;, line 233, in dispatch_shell
+    handler(stream, idents, msg)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/kernelbase.py&quot;, line 399, in execute_request
+    user_expressions, allow_stdin)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/ipkernel.py&quot;, line 208, in do_execute
+    res = shell.run_cell(code, store_history=store_history, silent=silent)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/ipykernel/zmqshell.py&quot;, line 537, in run_cell
+    return super(ZMQInteractiveShell, self).run_cell(*args, **kwargs)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2714, in run_cell
+    interactivity=interactivity, compiler=compiler, result=result)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2818, in run_ast_nodes
+    if self.run_code(code, result):
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2878, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File &quot;&lt;ipython-input-2-223ec6f66f2e&gt;&quot;, line 10, in &lt;module&gt;
+    get_ipython().magic(u&#39;matplotlib inline&#39;)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2160, in magic
+    return self.run_line_magic(magic_name, magic_arg_s)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2081, in run_line_magic
+    result = fn(*args,**kwargs)
+  File &quot;&lt;decorator-gen-105&gt;&quot;, line 2, in matplotlib
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/magic.py&quot;, line 188, in &lt;lambda&gt;
+    call = lambda f, *a, **k: f(*a, **k)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/magics/pylab.py&quot;, line 100, in matplotlib
+    gui, backend = self.shell.enable_matplotlib(args.gui)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/interactiveshell.py&quot;, line 2966, in enable_matplotlib
+    pt.activate_matplotlib(backend)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/IPython/core/pylabtools.py&quot;, line 315, in activate_matplotlib
+    matplotlib.pyplot.switch_backend(backend)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/matplotlib/pyplot.py&quot;, line 231, in switch_backend
+    matplotlib.use(newbackend, warn=False, force=True)
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/matplotlib/__init__.py&quot;, line 1425, in use
+    reload(sys.modules[&#39;matplotlib.backends&#39;])
+  File &quot;/home/jovyan/envs/ligo2/lib/python2.7/site-packages/matplotlib/backends/__init__.py&quot;, line 17, in &lt;module&gt;
+    line for line in traceback.format_stack()
+
+
+  matplotlib.use(&#39;Agg&#39;)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="read-the-event-properties-from-a-local-json-file-download-in-advance">
 <h3>Read the event properties from a local json file (download in advance):<a class="headerlink" href="#read-the-event-properties-from-a-local-json-file-download-in-advance" title="Permalink to this headline">¶</a></h3>
